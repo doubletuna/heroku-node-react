@@ -4,6 +4,7 @@ const app = express()
 const path = require('path')
 
 const api = require('./api')
+const { Console } = require('console')
 
 app.use('/api', api)
 
@@ -14,6 +15,7 @@ if (process.env.NODE_ENV === 'production') {
   app.get('*', function(req, res) {
     res.sendFile(path.join(__dirname, 'client/build/index.html'));
   });
+  console.log('process.env.TEST ? ', process.env.TEST)
 }
 
 const port = process.env.PORT || 3001
