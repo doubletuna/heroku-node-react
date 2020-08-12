@@ -1,6 +1,6 @@
 # How To Deploy a node.js React Application to Heroku
 
-Deploying to Heroku is not trivial, so in order to make thing simple, I've created this repository.
+Deploying to Heroku is not trivial, so in order to make things simple, I've created this repository.
 
 ## Getting Started
 
