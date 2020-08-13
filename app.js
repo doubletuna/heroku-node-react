@@ -16,6 +16,8 @@ if (process.env.NODE_ENV === 'production') {
     res.sendFile(path.join(__dirname, 'client/build/index.html'));
   });
   console.log('process.env.TEST ? ', process.env.TEST)
+} else {
+  console.log('process.env.TEST ? ', process.env.TEST)
 }
 
 const port = process.env.PORT || 3001
