@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 
-function App() {
+const App: React.FC = () => {
   const [data, setData] = useState('')
 
   useEffect(() => {
